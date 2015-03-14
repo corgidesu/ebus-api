@@ -33,8 +33,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    view: '403'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -46,4 +46,16 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  /* Securing the Login Page; used for creating users as well */
+
+  'get /login': {
+    view: '403'
+  },
+  'post /login/create': {
+    view: '403'
+  },
+  'post /login' : 'LoginController.create',
+
+  /* Securing the Routes */
+  'get /routes/list': 'RoutesController.find'
 };
