@@ -54,8 +54,9 @@ module.exports.routes = {
   'post /login/create': {
     view: '403'
   },
-  'post /login' : 'LoginController.create',
+  'post /login': 'LoginController.create',
+  'post /login/list': 'LoginController.find',
 
-  /* Securing the Routes */
+  /* Securing the Routes */  
   'get /routes/list': 'RoutesController.find'
 };
