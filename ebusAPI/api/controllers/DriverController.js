@@ -1,7 +1,7 @@
 /**
- * Route-timetableController
+ * DriverController
  *
- * @description :: Server-side logic for managing Route-timetables
+ * @description :: Server-side logic for managing Drivers
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 

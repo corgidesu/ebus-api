@@ -8,7 +8,25 @@
 module.exports = {
 
   attributes: {
-
+  	/* customer id */
+  	customer: {
+  		type: 'integer',
+  		via: 'Login',
+  		required: true
+  	},
+  	trip: {
+  		type: 'integer',
+  		via: 'Trip',
+      required: true
+  	},
+  	startDate: {
+  		type: 'datetime',
+  		required: true
+  	},
+  	seating: { /* seat number */
+  		type: 'integer',
+  		required: true
+  	}
   }
 };
 

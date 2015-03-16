@@ -8,20 +8,17 @@
 module.exports = {
 
   attributes: {
-    user: {
+    customer: {
       type: 'integer',
       required: true
-    },
-    bus: {
-      type: 'integer',
-      required: true
-    },
+    },    
     rating: {
       type: 'integer',
       enum: [1, 2, 3, 4, 5],
       required: true
     },
-    route: {
+    /* Booking contains all info required, we are feedback on booking */
+    booking: {
       type: 'integer',
       required: true
     },
