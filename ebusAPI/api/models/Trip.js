@@ -21,7 +21,7 @@ module.exports = {
   	price: {
   		type: 'float',
   		required: true
-  	}
+  	},
   	expectedStartDate: { /* supposed departure date */
   		type: 'datetime',
   		required: true
